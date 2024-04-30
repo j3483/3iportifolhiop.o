@@ -1,18 +1,20 @@
+
 :root {
-    --cor-primaria: #2d075ff1;
+    --cor-primaria: #000000;
     --cor-link: #000000;
-    --cor-head: #a100e0;
+    --cor-head: #00460c;
     --color-headhove: #fffafa;
-    --color-h1:#ff1100;
-    --color--txt-top:#07e2ff;
+    --color-h1:#33ff00;
+    --color--txt-top:#1100ff;
     --color--border:#000000 ;
     --color-h3: #000000;
-    --color-p:#0cceff;
-    --color-footer:#000000;
+    --color-footer:#4400ff;
     --color-footer-txt:#ffffff;
-
+    --color-link2:#ffffff;
+    --color-social-border:#ffffff;
+    --color--social-links-hover: #003b4d;
+    --color-link-border: #ffffff;
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -28,6 +30,7 @@ body {
     max-width: 1280px;
     margin: 0 auto;
 }
+
 .flex{
     display: flex;
 }
@@ -39,7 +42,7 @@ header {
 header > .interface {
     display: flex;
     align-items: center;
-    justify-content: space-between;         
+    justify-content: space-between;
 }
 
 header a {
@@ -113,55 +116,39 @@ padding: 40px 4%;
 
 }
 
-
-
-.membro {
-flex: 1;
-text-align: center;
-margin: 20px;
-border: 5px solid var(--color--border);
-border-radius: 30px;
-padding: 20px 50px;
-display: inline-block;
-box-shadow: 0px 0px 8px #858585 ;
-}
-
-.membro img {
-width: 150px;
-height: 150px;
-border-radius: 50%;
-margin-bottom: 10px;
-border: 2px solid var(--cor-primaria);
-border-radius: 30px;
-box-shadow: 0px 0px 8px #858585; 
-}
-
-.membro h3 {
-font-size: 24px;
-margin-bottom: 10px;
-color: var(--color-h3);
-}
-
-.membro p {
-font-size: 16px;
-line-height: 1.6;
-text-align: justify;
-color: var(--color-p);
-
-}
-
-main {
-margin-bottom: 30px; /* Adiciona um espaçamento inferior */
-}
-
-
 footer {
 background-color: var(--color-footer);
 color: var(--color-footer-txt);
 text-align: center;
 padding: 20px 50px;
-position:relative;
+position:absolute;
 bottom: 0;
 width: 100%;
 font-size: 18px;
 }
+
+.social-links {
+display: flex;
+justify-content: center;
+margin-top: 20px;
+}
+
+.social-links a {
+margin: 0 10px;
+text-decoration: none;
+color: var(--color-link2);
+display: flex;
+flex-direction: column;
+align-items: center;
+transition: background-color 0.4s;
+border: 2px solid ; 
+border-color: var(--color-social-border);
+padding: 5px 15px;
+}
+
+.social-links a:hover {
+background-color:var(--color--social-links-hover);
+border-color: var(--color-link-border);/* Muda a cor da borda para branco quando o mouse passa por cima */
+}
+
+
